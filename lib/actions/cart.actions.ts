@@ -2,13 +2,11 @@
 
 import { revalidatePath } from 'next/cache';
 import { cookies } from 'next/headers';
-import { z } from 'zod';
 import { auth } from '@/auth';
 import { formatError, round2 } from '../utils';
 import { cartItemSchema, insertCartSchema } from '../validator';
 import { prisma } from '@/db/prisma';
 import { CartItem } from '@/types';
-import { Prisma } from '@prisma/client';
 import { convertToPlainObject } from '../utils';
 
 // Calculate cart prices
