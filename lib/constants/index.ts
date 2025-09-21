@@ -16,3 +16,11 @@ export const LATEST_PRODUCTS_LIMIT =
   confirmPassword: '',
 };
 
+export const shippingAddressDefaultValues = {
+  fullName: '',
+  streetAddress: '',
+  city: '',
+  postalCode: '',
+  country: '',
+};
+
