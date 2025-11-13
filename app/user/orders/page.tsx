@@ -25,7 +25,8 @@ const OrdersPage = async (props: {
     page: Number(page) || 1,
   });
 
-    return <div className='space-y-2'>
+    return (
+    <div className='space-y-2'>
       <h2 className='h2-bold'>Orders</h2>
       <div className='overflow-x-auto'>
         <Table>
@@ -69,7 +70,8 @@ const OrdersPage = async (props: {
         />
       )}
       </div>
-    </div>;
+    </div>
+    );
 };
  
 export default OrdersPage;
