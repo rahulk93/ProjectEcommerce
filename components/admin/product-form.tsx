@@ -65,6 +65,7 @@ const form = useForm<z.infer<typeof insertProductSchema>>({
     if (!res.success) {
       toast.error(res.message);
     } else {
+      toast.success(res.message);
       router.push(`/admin/products`);
     }
   }
