@@ -14,10 +14,7 @@ import { toast } from "sonner";
 import { useTransition } from 'react';
 import StripePayment from './stripe-payment';
 
-
-
-
-const OrderDetailsTable = ({ order, paypalClientId, isAdmin, stripeClientSecret, }: { order: Order, paypalClientId: string; isAdmin: boolean; stripeClientSecret: string | null; }) => {
+const OrderDetailsTable = ({ order, paypalClientId, isAdmin, stripeClientSecret, }: { order: Omit<Order, 'paymentResult'>, paypalClientId: string; isAdmin: boolean; stripeClientSecret: string | null; }) => {
     const {
        id,
        shippingAddress,

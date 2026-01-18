@@ -57,3 +57,5 @@ export const USER_ROLES = process.env.USER_ROLES
   rating: 0,
 };
 
+export const SENDER_EMAIL = process.env.SENDER_EMAIL || 'onboarding@resend.dev';
+
